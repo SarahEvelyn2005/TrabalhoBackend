@@ -5,11 +5,11 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 // routers
-const barbersRouter = require("./routes/barbers");
-const customersRouter = require("./routes/customers");
-const servicesRouter = require("./routes/services");
-const appointmentsRouter = require("./routes/appointments");
-const subscriptionsRouter = require("./routes/subscriptions");
+const barbersRouter = require("../TrabalhoBackend/src/routes/barbers");
+const customersRouter = require("../TrabalhoBackend/src/routes/customers");
+const servicesRouter = require("../TrabalhoBackend/src/routes/services");
+const appointmentsRouter = require("../TrabalhoBackend/src/routes/appointments");
+const subscriptionsRouter = require("../TrabalhoBackend/src/routes/subscriptions");
 
 app.use("/api/v1/barbers", barbersRouter);
 app.use("/api/v1/customers", customersRouter);
